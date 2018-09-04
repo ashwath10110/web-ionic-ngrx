@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Ngrx/Ionic Mobile App
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h2 text-center>
+        {{counter$ | async}}
+    </h2>
+    
+    <p text-center>
+        <ion-button (click)="increment()"> +1</ion-button>
+        <ion-button (click)="decrement()"> -1</ion-button>
+    </p>
+    <p text-center>
+        <ion-button (click)="reset()"> Reset</ion-button>
+    </p>
+    
+    <app-my-component></app-my-component>
+    
+    <button mat-raised-button color="primary">Primary</button>
+    
+</ion-content>
